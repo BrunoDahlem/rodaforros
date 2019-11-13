@@ -7,6 +7,20 @@
 img{
     width: 100%;
 }
+.linear{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.coluna{
+    margin-left:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+/* Parte onde se altera o header */
+
 /* Parte onde se altera o topo */
 .topo{
     background: #000;
@@ -16,6 +30,45 @@ img{
 /* Parte onde se altera a logo */
 .logo{
     width: 350px;
+}
+/* Parte onde se altera o whats */
+#whats{
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
+}
+/* Parte onde se altera as redes socias */
+.flecha{
+    margin-right: 10px;
+    display: flex;
+    align-self: center;
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    min-width: 50px;
+    background: gray;
+    position: absolute;
+    top: 45px;
+    right:-73px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+}
+.fechaRedes{
+    position: absolute;
+    top: 0;
+    right: 16px;
+    padding: 7px;
+    border-radius: 5px;
+    z-index: 999999;
+}
+.iconRede{
+    width: 50px;
 }
 /* Parte onde se altera o menu */
 nav a{
@@ -32,11 +85,22 @@ nav a:hover{
     height: 85px;
 }
 .menu{
+    color: #000;
+    font-size: 24px;
     margin: 1px;
-    padding: 10px;
-    border: 1px solid #000;
+    padding: 20px;
     border-radius: 5px;
 }
 .menu:active {
     box-shadow: inset -2px 2px 3px 3px rgba(0, 0, 0, 0.42);
+}
+@media (min-width: 1920px) {
+    .container{
+        width: 1920px;
+    }
+}
+@media (min-width: 2560px) {
+    .container{
+        width: 2560px;
+    }
 }
